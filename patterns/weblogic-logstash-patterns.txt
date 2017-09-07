@@ -1,0 +1,11 @@
+MONTH_ES (?i)\b(?:Ene(?:ro)?|Feb(?:rero)?|Mar(?:zo)?|Abr(?:il)?|May(?:o)?|Jun(?:io)?|Jul(?:io)?|Ago(?:sto)?|Sep(?:tiembre)?|Oct(?:ubre)?|Nov(?:iembre)?|Dic(?:iembre)?)\b
+
+WLS_SERVERLOG_DATE %{MONTHDAY}-%{MONTH_ES}-%{YEAR}\s+%{HOUR}H%{MINUTE}\'
+
+ACCESSDATE ^\d{4}[./-]%{MONTHNUM}[./-]%{MONTHDAY}
+
+JAVAPACKAGE ([a-zA-Z_$][a-zA-Z\d_$]*\.)*[a-zA-Z_$][a-zA-Z\d_$]*
+WORDNOSPACES [^ ]*
+WORDNOBRACKET [^\]]*
+
+

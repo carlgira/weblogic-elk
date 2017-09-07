@@ -1,0 +1,15 @@
+#
+# ROTATION_TYPE = TIME
+# TIME_INTERVAL_MINS = 1440
+# MAX_FILE_COUNT = -1
+#
+
+578750.608: [GC (Allocation Failure) [PSYoungGen: 3040955K->14143K(3047424K)] 6193354K->3168596K(9191424K), 0.1304549 secs] [Times: user=0.33 sys=0.02, real=0.13 secs] 
+579398.500: [GC (Allocation Failure) [PSYoungGen: 3036991K->9624K(3047936K)] 6191444K->3170069K(9191936K), 0.1315860 secs] [Times: user=0.36 sys=0.00, real=0.13 secs] 
+<11-jul-2017 06H30' CEST> <Error> <JDBC> <BEA-001112> <Test "SELECT 1 FROM DUAL" set up for pool "SOADataSource" failed with exception: "oracle.jdbc.xa.OracleXAException: OracleError = 17410; OracleSQLError = 0; XAError = -7".> 
+<11-jul-2017 06H30' CEST> <Warning> <JDBC> <BEA-001129> <Received exception while creating connection for pool "SOADataSource": Error de E/S: Got minus one from a read call.> 
+2017-07-11 06:30:02.845 ERROR 2824 --- [SOAWorkManager'] oracle.soa.b2b.transport                 : AQDequeuer_ReadMessage: A database exception occurred: java.sql.SQLException: Cannot obtain XAConnection
+<11-jul-2017 06H30' CEST> <Error> <JDBC> <BEA-001112> <Test "SELECT 1 FROM DUAL" set up for pool "SOADataSource" failed with exception: "oracle.jdbc.xa.OracleXAException: OracleError = 17410; OracleSQLError = 0; XAError = -7".> 
+<11-jul-2017 06H30' CEST> <Warning> <JDBC> <BEA-001129> <Received exception while creating connection for pool "SOADataSource": Error de E/S: Got minus one from a read call.> 
+<03-ago-2017 14H36' CEST> <Notice> <WebLogicServer> <BEA-000388> <JVM called the WebLogic Server shutdown hook. The server will force shutdown now.> 
+<03-ago-2017 14H36' CEST> <Notice> <WebLogicServer> <BEA-000396> <Server shutdown has been requested by <WLS Kernel>.> 

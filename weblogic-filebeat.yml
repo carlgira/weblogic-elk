@@ -1,0 +1,31 @@
+filebeat.prospectors:
+- type: log
+  include_lines: ['^[0-9]{4}\-[0-9]{2}\-[0-9]{2}']
+  exclude_lines: ['isSoaServerReady']
+  tags: ["weblogic-access-log"]
+  paths:
+    - logs/access.log
+
+- type: log
+  include_lines: ['^\[[0-9]{4}\-[0-9]{2}\-[0-9]{2}']
+  exclude_lines: ['\[NOTIFICATION\]']
+  tags: ["weblogic-diagnostic-log"]
+  paths:
+    - logs/diagnostic.log
+
+- type: log
+  include_lines: ['^####']
+  exclude_lines: ['<Info>']
+  tags: ["weblogic-server-log"]
+  paths:
+    - logs/server.log
+
+- type: log
+  include_lines: ['^<[0-9]{2}']
+  exclude_lines: [' INFO ']
+  tags: ["weblogic-stdout-log"]
+  paths:
+    - logs/stdout.txt
+
+output.logstash:
+  hosts: ["localhost:5043"]
