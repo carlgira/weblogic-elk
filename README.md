@@ -1,4 +1,4 @@
-"# weblogic-elk" 
+# Weblogic ELK
 
 Filebeat and Logstash for Weblogic
 
